@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.task-area{
+    border: 1px solid lightgray;
+}
+.task-tabs{
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+}
+.task-tabs div{
+    padding: 1em;
+}
+.task-tab-item:hover{
+    border-bottom: 4px solid pink;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.task-done{
+    text-decoration: line-through;
+    background-color: gray;
+}
+.delete-button{
+    background: url(./assets/trash-can-solid.svg) no-repeat;
+    border: none;
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.check-button{
+    background: url(./assets/check-solid.svg) no-repeat;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+.re-button{
+    background: url(./assets/rotate-left-solid.svg) no-repeat;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+.task-tab-item{
+    cursor: pointer;
+}
